@@ -6,6 +6,10 @@ app.get("/", (req, res) => {
     res.send("Hello World");
 });
 
+app.get("/hello", (req, res) => {
+    res.send("Hello World");
+});
+
 app.get("/api", async (req, res) => {
     try{
         const response = await axios.get("http://127.0.0.1:5001/sample-project-1824d/us-central1/api/getClubs");

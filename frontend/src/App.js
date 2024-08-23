@@ -21,7 +21,7 @@ function App() {
 
   const getHelloWorld = async () => {
     try {
-      const response = await axios.get("/");
+      const response = await axios.get("/hello");
       console.log(response);
       setText(response.data);
     }
