@@ -21,7 +21,7 @@ function App() {
 
   const getHelloWorld = async () => {
     try {
-      const response = await axios.get("/hello");
+      const response = await axios.get("https://sample-fern-app-server-o1aemqd25-manishmalliks-projects.vercel.app//hello");
       console.log(response);
       setText(response.data);
     }
