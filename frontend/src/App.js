@@ -19,6 +19,17 @@ function App() {
     }
   }
 
+  const getHelloWorld = async () => {
+    try {
+      const response = await axios.get("/");
+      console.log(response);
+      setText(response.data);
+    }
+    catch (error) {
+      console.error(error);
+    }
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -36,6 +47,7 @@ function App() {
         </a>
         {/* Click on button */}
         <button onClick={getData}>Get Data</button>
+        <button onClick={getHelloWorld}>Click</button>
         <p>{text}</p>
       </header>
     </div>
