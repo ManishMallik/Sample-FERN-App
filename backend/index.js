@@ -4,7 +4,7 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors({
-    origin: 'https://sample-fern-app-client.vercel.app/', // Replace with your React app's URL
+    origin: 'https://sample-fern-app-client.vercel.app', // Replace with your React app's URL
     methods: 'GET,POST', // Specify the HTTP methods you want to allow
 }));
 
