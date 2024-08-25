@@ -1,6 +1,12 @@
 const express = require("express");
 const axios = require("axios");
+const cors = require("cors");
 const app = express();
+
+app.use(cors({
+    origin: 'https://sample-fern-app-server-git-main-manishmalliks-projects.vercel.app/', // Replace with your React app's URL
+    methods: 'GET,POST', // Specify the HTTP methods you want to allow
+}));
 
 app.get("/", (req, res) => {
     res.send("Hello World");
