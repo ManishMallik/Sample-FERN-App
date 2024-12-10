@@ -1,13 +1,13 @@
 const express = require("express");
 const axios = require("axios");
-const cors = require("cors");
+// const cors = require("cors");
 const app = express();
 
-app.use(cors({
-    origin: 'https://manishmallik.github.io/', // Replace with your React app's URL
-    methods: 'GET,POST', // Specify the HTTP methods you want to allow
-    allowedHeaders: 'Content-Type', // Specify the allowed content-type
-}));
+// app.use(cors({
+//     origin: 'https://manishmallik.github.io/', // Replace with your React app's URL
+//     methods: 'GET,POST', // Specify the HTTP methods you want to allow
+//     allowedHeaders: 'Content-Type', // Specify the allowed content-type
+// }));
 
 app.get("/", (req, res) => {
     res.send("Hello World");
